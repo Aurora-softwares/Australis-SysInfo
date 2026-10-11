@@ -1,0 +1,13 @@
+format = 2
+name = "System Information"
+version = "0.1.0"
+type = "exec"
+output = "sys-info.exec"
+sources = ["src/Program.hy"]
+project_references = []
+
+[package]
+id = "os.australis.sys-info"
+description = "Minimal Australis executable"
+authors = ["Aurora Softwares"]
+license = "MIT"
