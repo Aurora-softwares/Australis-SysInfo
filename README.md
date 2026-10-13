@@ -1,17 +1,14 @@
-# Australis System Information prototype
+# Australis System Information
 
-## Current status
-
-The current source prints `Hello, World!`; it does not report system information.
+`sys-info.exec` reports read-only boot, kernel, display, and device summaries
+through the versioned Australis system-information API. It replaces the planned
+standalone `cpu`, `cpuid`, and `timer` shell commands without exposing raw CPU
+leaves or kernel addresses.
 
 `SysInfo.hyproj` builds `sys-info.exec`. The Australis OS aggregate includes
 this project and installs the executable at `/Bin/sys-info.exec` in the read-only
-HyFS 2 boot image. Run it by its bare name `/Bin/` through the current
-recovery shell's `PATH`, or use `run /Bin/sys-info.exec`.
-
-## Planned direction
-
-Use versioned read-only system-information queries once the needed selectors are available.
+HyFS 2 boot image. Run `sys-info` through the current recovery shell's `PATH`,
+or use `run /Bin/sys-info.exec`.
 
 Build this checkout with:
 

@@ -8,6 +8,6 @@ project_references = []
 
 [package]
 id = "os.australis.sys-info"
-description = "Minimal Australis executable"
+description = "Read-only Australis kernel, boot, display, and device summary"
 authors = ["Aurora Softwares"]
 license = "MIT"
