@@ -6,9 +6,9 @@ standalone `cpu`, `cpuid`, and `timer` shell commands without exposing raw CPU
 leaves or kernel addresses.
 
 `SysInfo.hyproj` builds `sys-info.exec`. The Australis OS aggregate includes
-this project and installs the executable at `/Bin/sys-info.exec` in the read-only
+this project and installs the executable at `/System/Bin/sys-info.exec` in the read-only
 HyFS 2 boot image. Run `sys-info` through the current recovery shell's `PATH`,
-or use `run /Bin/sys-info.exec`.
+or use `run /System/Bin/sys-info.exec`.
 
 Build this checkout with:
 
