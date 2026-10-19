@@ -26,6 +26,16 @@ public class Program {
         System.Console.WriteLine(System.Australis.SystemInfo.Query(23));
         System.Console.WriteLine("Framebuffer height:");
         System.Console.WriteLine(System.Australis.SystemInfo.Query(24));
+        if (api >= 5) {
+            System.Console.WriteLine("Framebuffer stride in pixels:");
+            System.Console.WriteLine(System.Australis.SystemInfo.Query(26));
+            System.Console.WriteLine("Framebuffer pixel format (0 RGB, 1 BGR):");
+            System.Console.WriteLine(System.Australis.SystemInfo.Query(27));
+            System.Console.WriteLine("Framebuffer bits per pixel:");
+            System.Console.WriteLine(System.Australis.SystemInfo.Query(28));
+            System.Console.WriteLine("Framebuffer mode flags (1 valid, 2 fixed):");
+            System.Console.WriteLine(System.Australis.SystemInfo.Query(29));
+        }
         System.Console.WriteLine("Clock calibration (1 ready, 2 failed):");
         System.Console.WriteLine(System.Australis.SystemInfo.Query(25));
         return 0;

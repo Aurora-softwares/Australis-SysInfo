@@ -1,7 +1,9 @@
 # Australis System Information
 
 `sys-info.exec` reports read-only boot, kernel, display, and device summaries
-through the versioned Australis system-information API. It replaces the planned
+through the versioned Australis system-information API. API 5 includes the
+validated fixed framebuffer mode geometry, stride, pixel format, depth, and
+flags without disclosing its physical address. It replaces the planned
 standalone `cpu`, `cpuid`, and `timer` shell commands without exposing raw CPU
 leaves or kernel addresses.
 
