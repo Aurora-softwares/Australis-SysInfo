@@ -7,7 +7,7 @@ sources = ["src/Program.hy"]
 project_references = []
 
 [package]
-id = "os.australis.sys-info"
+id = "australis.applications.sys-info"
 description = "Read-only Australis kernel, boot, display, and device summary"
 authors = ["Aurora Softwares"]
 license = "MIT"
